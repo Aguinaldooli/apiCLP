@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dados do CLP</title>
+
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <h1>Dados do CLP</h1>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Botão</th>
+          <th>Sensor</th>
+          <th>Reset Contador</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for dado in dados %}
+        <tr>
+          <td>{{ dado.id }}</td>
+          <td>{{ dado.Botao }}</td>
+          <td>{{ dado.Sensor }}</td>
+          <td>{{ dado.ResetContador }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>
